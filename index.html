@@ -1,0 +1,250 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpoRT" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Clothing Shop</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <img src="Icon and logo/Screenshot_8-removebg-preview.png" width="90" height="90" alt="">
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img src="Icon and logo/search_icon-removebg-preview.png" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div>
+            <div class="navItem">
+                <span class="limitedOffer" onclick="location.href='admin.php';" style="cursor: pointer;">Admin</span>
+
+            </div>
+        </div>
+        <div class="navBottom">
+            <h3 class="menuItem">WOMEN</h3>
+            <h3 class="menuItem">MEN</h3>
+            <h3 class="menuItem">KID</h3>
+            <h3 class="menuItem">DRESSES</h3>
+            <h3 class="menuItem">BABY</h3>
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="Product/Blue Plaid Cropped Hooded.webp" alt="" width="650" height="650" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">WOMENS</br>NEW</br>CLOTHES</h1>
+                <h2 class="sliderPrice">RM80</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="Product/Navy-Blue-Banded-Sleeves-Cardigan-Choi-Seung-Hyo-Love-Next-Door.webp" alt="" width="600" height="600" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">MENS</br> NEW</br> CLOTHES</h1>
+                <h2 class="sliderPrice">RM75</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="Product/4cc0b068a6b594a2904a315a815f8f07 (1).webp" alt="" width="600" height="600" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">KIDS</br> NEW</br> CLOTHES</h1>
+                <h2 class="sliderPrice">RM49</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="Product/Blue colour.webp" alt="" width="570" height="600" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">NEW</br> WOMEN</br> Dresses</h1>
+                <h2 class="sliderPrice">RM100</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="Product/hmgoepprod (1).webp" alt="" width="600" height="600" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">BABY</br> NEW</br> CLOTHES</h1>
+                <h2 class="sliderPrice">RM29</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+        </div>
+    </div>
+   
+    <div class="features">
+        <div class="feature">
+            <img src="Icon and logo/shipping.png" alt="" class="featureIcon">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">"Enjoy free shipping on all orders, delivered worldwide!".</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="Icon and logo/return.png" alt="">
+            <span class="featureTitle">14 DAYS RETURN</span>
+            <span class="featureDesc">Enjoy a hassle-free shopping experience. No questions asked for returns. Easy refunds within 14 days.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="Icon and logo/gift.png" alt="">
+            <span class="featureTitle">Free Voucher</span>
+            <span class="featureDesc">Special voucher available exclusively for new users!</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="Icon and logo/contact.png" alt="">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch through email and our support platform!</span>
+        </div>
+    </div>
+        <div class="product" id="product">
+        <img src="Product/Blue Plaid Cropped Hooded.webp" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">Blue Plaid Cropped Hooded</h1>
+            <h2 class="productPrice">RM89</h2>
+            <p class="productDesc">At Elegant Wear, our clothing line is designed to inspire confidence, comfort, and style for every individual.
+                Our collections feature a variety of styles, materials, and fits, ensuring that there’s something for everyone.</p>
+            <div class="colors">
+                <div class="color"></div>
+                <div class="color"></div>
+            </div>
+            <div class="sizes">
+                <div class="size">S</div>
+                <div class="size">M</div>
+                <div class="size">L</div>
+                <div class="size">XL</div>
+            </div>
+            <button class="productButton">BUY NOW!</button>
+        </div>
+            <div class="payment">
+                <h1 class="payTitle">Personal Information</h1>
+                <form action="data.php" method="POST">
+                    <label>Name and Surname</label>
+                    <input type="text" name="name" placeholder="John Doe" class="payInput">
+                    <br>
+                    <label>Phone Number</label>
+                    <input type="text" name="phone" placeholder="+6012 345 6781" class="payInput" maxlength="13">
+                    <br>
+                    <label>Address</label>
+                    <input type="text" name="address" placeholder="Elton St 21 22-145" class="payInput">
+                    <br>
+                    <h1 class="payTitle">Card Information</h1>
+                    <div class="cardIcons">
+                        <img src="Icon and logo/visa.png" width="40" alt="" class="cardIcon">
+                        <img src="Icon and logo/mastercard.png" alt="" width="40" class="cardIcon">
+                    </div>
+                    <input type="text" name="card_number" class="payInput" placeholder="Card Number" maxlength="16">
+                    <div class="cardInfo">
+                        <input type="text" name ="expiry_month" placeholder="mm" class="payInput sm" maxlength="2">
+                        <input type="text" name ="expiry_year" placeholder="yyyy" class="payInput sm" maxlength="4">
+                        <input type="text" name ="cvv" placeholder="cvv" class="payInput sm">
+                    </div>
+                    <button type="submit" class="payButton">Checkout!</button>
+                    <span class="close">X</span>
+                </form>
+            </div>
+        </div>
+    <div class="gallery">
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Styled by You!</h1>
+            <img src="Poster picture/Screenshot_1.png"
+                alt="" class="galleryImg">
+        </div>
+        <div class="galleryItem">
+            <img src="Poster picture/Screenshot_2.png"
+                alt="" class="galleryImg">
+            <h1 class="galleryTitle">Spill ur GUTS</h1>
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle">New in Heaven!</h1>
+            <img src="Poster picture/Screenshot_3.png"
+                alt="" class="galleryImg">
+        </div>
+    </div>
+    <div class="newSeason">
+        <div class="nsItem">
+            <img src="Poster picture/Fashion.png"
+                alt=""  class="nsImg">  
+        </div>
+            <div class="nsItem">
+            <h3 class="nsTitleSm">WINTER NEW ARRIVALS</h3>
+            <h1 class="nsTitle">New Season</h1>
+            <h1 class="nsTitle">New Collection</h1>
+            <a href="#nav">
+                <button class="nsButton">CHOOSE YOUR STYLE</button>
+            </a>
+        </div>
+        <div class="nsItem">
+            <img src="Poster picture/Fashion (1).png"
+                alt="" class="nsImg"> 
+        </div>   
+    </div>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem">Plaid Cropped Hoodie</li>
+                    <li class="fListItem">Sleeves Cardigan</li>
+                    <li class="fListItem">Floral Dresses</li>
+                    <li class="fListItem">Crater</li>
+                    <li class="fListItem">Baby Sweater</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our channel</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="Icon and logo/images.png"  alt="" class="fIcon">
+                    <img src="Icon and logo/-twitter-x-new-logo.png" alt="" class="fIcon">
+                    <img src="Icon and logo/instagram.png" alt="" class="fIcon">
+                    <img src="Icon and logo/whatsapp.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@sweet/storm. All rights reserved. 2023.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
